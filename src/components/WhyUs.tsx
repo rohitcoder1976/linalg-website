@@ -53,7 +53,7 @@ const rightVariants = {
 function WhyUs() {
     const [activeIndex, setActiveIndex] = useState(0);
     return (
-        <div className="my-3 py-10 px-6"> 
+        <div className="my-3 min-h-[calc(100vh_-_250px)] px-6"> 
             <h2 className="text-center poppins font-bold text-4xl text-[#d3a971]">Why Join?</h2>
             <div className="flex justify-evenly mt-12">
                 <motion.div variants={leftVariants} initial="initial" whileInView="animate" className="space-y-5">

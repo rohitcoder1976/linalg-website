@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import OurTeam from "@/components/OurTeam";
 import WhyUs from "@/components/WhyUs";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <WhyUs />
+      <OurTeam />
     </div>
   );
 }
