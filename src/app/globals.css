@@ -22,5 +22,40 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.poppins-300 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.poppins-400 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.poppins-500 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.poppins-600 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.poppins-700 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.poppins-800 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
