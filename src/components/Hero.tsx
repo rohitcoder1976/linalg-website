@@ -31,7 +31,7 @@ const rightSideVariants = {
 
 function Hero() {
     return (
-        <div className="h-[100vh] w-[100vw] p-4 flex items-center justify-evenly">
+        <div id="hero" className="h-[100vh] w-[100vw] p-4 flex items-center justify-evenly">
             <motion.div variants={leftSideVariants} initial="initial" animate="animate" className="space-y-2">
                 <p className="poppins tracking-[0.17rem] text-[#d3a971]">APPROVED BY CARAVEL ACADEMY</p>
                 <p className="text-4xl">

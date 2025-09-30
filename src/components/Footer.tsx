@@ -16,11 +16,11 @@ const links = [
 ]
 function Footer() {
     return (
-        <div className="bg-[#222222] w-full flex gap-30 px-16 pt-10 pb-14">
+        <div id="footer" className="bg-[#222222] w-full flex gap-30 px-16 pt-10 pb-14">
             <div>
                 <h3 className="font-semibold text-xl">About Us</h3>
                 <p className="w-100 text-md mt-3">We empower students to gain undergraduate level of expertise in linear algebra through practical data science experience.</p>
-                <a href="">
+                <a href="mailto:cwentling@caravel.org">
                     <p className="mt-5 gap-[6px] flex items-center cursor-pointer hover:opacity-70">
                         <Mail size={16} />
                         <span>

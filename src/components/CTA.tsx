@@ -19,7 +19,7 @@ const variants = {
 
 function CTA() {
     return (
-        <div className="flex justify-center items-center min-h-[calc(100vh)] py-4 px-6">
+        <div id="contact" className="flex justify-center items-center min-h-[calc(100vh)] py-4 px-6">
             <motion.div variants={variants} initial="initial" whileInView="animate">
                 <motion.div variants={variants} className="flex justify-center">
                     <div>
@@ -31,12 +31,14 @@ function CTA() {
                 </motion.div>
                 <motion.div variants={variants} className="flex justify-center mt-2">
                     <div className="relative">
-                        <button
-                            className="py-[10px] px-7 rounded-lg border-2 border-white poppins font-semibold text-md text-black
-                            bg-white cursor-pointer hover:opacity-70 duration-100 mt-5 w-60"
-                        >Apply Now</button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrT9iHyOZT5oHfemGs-B2LbQRZj2loL9bIz8Eq72fInzCIBw/viewform?usp=dialog">
+                            <button
+                                className="py-[10px] px-7 rounded-lg border-2 border-white poppins font-semibold text-md text-black
+                                bg-white cursor-pointer hover:opacity-70 duration-100 mt-5 w-60"
+                            >Apply Now</button>
+                        </a>
                         <p className="text-white mt-3">
-                            Or contact <a className="text-[#d3a971]" href="mailto:cwentling@caravel.org">cwentling@caravel.org</a> for more info
+                            Or contact <a className="text-[#d3a971] hover:opacity-80 " href="mailto:cwentling@caravel.org">cwentling@caravel.org</a> for more info
                         </p>
                         <span className="absolute bg-white w-4 h-4 left-[-47px] top-[0] rounded-full"></span>
                         <span className="absolute bg-white left-[-40px] w-[2px] top-[8px] bottom-3"></span>
