@@ -23,9 +23,9 @@ function Navbar() {
                     href="#members"
                     className="poppins text-md hover:opacity-80 duration-50 cursor-pointer px-2 py-4"
                 >Members</a>
-                <a
+                {/* <a
                     className="poppins text-md hover:opacity-80 duration-50 cursor-pointer px-2 py-4"
-                >Resources</a>
+                >Resources</a> */}
                 <a href="#contact">
                     <button 
                         className="py-2 px-4 rounded-lg border-2 border-[#d3a971] poppins font-semibold text-md text-[#d3a971]
