@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: black;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 @theme inline {
@@ -58,4 +62,3 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
 }
-

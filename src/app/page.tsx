@@ -1,6 +1,6 @@
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/Navbar";
 import OurTeam from "@/components/OurTeam";
 import WhyUs from "@/components/WhyUs";
@@ -10,10 +10,10 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      <WhyUs />
+      {/* <WhyUs />
       <OurTeam />
       <CTA />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
