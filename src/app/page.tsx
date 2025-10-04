@@ -1,7 +1,7 @@
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/hero/Hero";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import OurTeam from "@/components/OurTeam";
 import WhyUs from "@/components/WhyUs";
 
