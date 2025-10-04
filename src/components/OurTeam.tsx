@@ -68,7 +68,7 @@ function OurTeam() {
                         key={index}
                         className="flex flex-col items-center"
                     >
-                        {member.profilePicture == "none" ? 
+                        {member.profilePicture == "none" ?
                             <div className={
                                 `w-14 h-14 rounded-full 
                                 ${index > colorToIndex.length ? (colorToIndex[index % (colorToIndex.length - 1) - 1]) : colorToIndex[index]} 
@@ -79,7 +79,7 @@ function OurTeam() {
                             <img src={member.profilePicture} className="w-14 h-14 rounded-full border border-white" />
                         }
                         <p className="mt-2 poppins text-[#d3a971] text-md">{member.title}</p>
-                        <p className="mt-[2px] poppins text-white text-lg">{member.name}</p>
+                        <p className="mt-[2px] poppins text-white text-lg text-center">{member.name}</p>
                     </motion.div>
                 ))}
             </motion.div>

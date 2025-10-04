@@ -1,4 +1,4 @@
-import CTA from "@/components/CTA";
+import CTA from "@/components/cta/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/navbar/Navbar";
@@ -10,10 +10,10 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      {/* <WhyUs />
+      {/* <WhyUs /> */}
       <OurTeam />
       <CTA />
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

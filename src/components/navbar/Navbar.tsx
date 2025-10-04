@@ -16,8 +16,8 @@ function Navbar() {
             </a>
 
             <div className={styles.links}>
-                <a href="#about" className={styles.aboutUs}>About Us</a>
-                <a href="#members" className={styles.members}>Members</a>
+                <a href="#about" className={styles.aboutUs + " " + styles.link}>About Us</a>
+                <a href="#members" className={styles.members + " " + styles.link}>Members</a>
                 <a href="#contact" className={styles.contactUs}>
                     <button>Contact Us</button>
                 </a>

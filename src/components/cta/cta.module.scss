@@ -1,0 +1,258 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 1.5rem;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 2.25rem;
+      color: white;
+
+      span {
+        color: #d3a971;
+      }
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      width: 40rem;
+      margin-top: 1rem;
+      color: white;
+    }
+  }
+
+  .apply {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .box {
+      position: relative;
+
+      button {
+        padding: 10px 1.75rem;
+        border-radius: 0.5rem;
+        border: 2px solid white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        transition: opacity 0.1s ease-in-out;
+        margin-top: 1.25rem;
+        width: 15rem;
+      }
+
+      button:hover {
+        opacity: 0.7;
+      }
+
+      p {
+        color: white;
+        margin-top: 0.75rem;
+
+        a {
+          color: #d3a971;
+          transition: opacity 0.1s ease-in-out;
+        }
+
+        a:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .dot {
+        position: absolute;
+        background-color: white;
+        width: 16px;
+        height: 16px;
+        left: -47px;
+        top: 5px;
+        border-radius: 50%;
+      }
+
+      .lineVertical {
+        position: absolute;
+        background-color: white;
+        left: -40.5px;
+        width: 2px;
+        top: 8px;
+        bottom: 12px;
+      }
+
+      .lineBottom {
+        position: absolute;
+        background-color: white;
+        left: -40px;
+        bottom: 0.75rem;
+        height: 2px;
+        width: 1.5rem;
+      }
+
+      .lineTop {
+        position: absolute;
+        background-color: white;
+        left: -40px;
+        bottom: 3.5rem;
+        height: 2px;
+        width: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .cta {
+    .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        text-align: center;
+      }
+
+      .subtitle {
+        font-size: 1.125rem;
+        width: 30rem;
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+
+    .apply {
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+        button {
+          margin-top: 0;
+          width: 300px;
+        }
+
+        p {
+          margin-top: 1rem;
+        }
+
+        .dot {
+          display: none;
+        }
+
+        .lineVertical {
+          display: none;
+        }
+
+        .lineBottom {
+          display: none;
+        }
+
+        .lineTop {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .cta {
+    .inner {
+      .title {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      .subtitle {
+        font-size: 0.95rem;
+        width: 24rem;
+        margin: auto;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .cta {
+    .inner {
+      .title {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+      .subtitle {
+        font-size: 0.95rem;
+        width: 20rem;
+        margin: auto;
+        margin-top: 10px;
+      }
+    }
+    .apply {
+      .box {
+        button {
+          width: 250px;
+        }
+        p {
+          margin-top: 1rem;
+          font-size: 0.9rem;
+          width: 250px;
+          text-align: center;
+
+          a {
+            color: #d3a971;
+            transition: opacity 0.1s ease-in-out;
+          }
+
+          a:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 347px) {
+  .cta {
+    .inner {
+      .title {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      .subtitle {
+        font-size: 0.8rem;
+        width: 15.5rem;
+        margin: auto;
+        margin-top: 10px;
+      }
+    }
+
+    .apply {
+      .box {
+        margin-top: 6px;
+        button {
+          width: 220px;
+          font-size: 0.9rem;
+          padding: 8px 1.75rem;
+        }
+        p {
+          margin-top: 1.3rem;
+
+          font-size: 0.8rem;
+          width: 220px;
+        }
+      }
+    }
+  }
+}
