@@ -1,0 +1,112 @@
+.footer {
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  gap: 7.5rem; // gap-30 (30 * 0.25rem = 7.5rem)
+  padding: 2.5rem 4rem 3.5rem 4rem; // pt-10 px-16 pb-14
+
+  h3 {
+    font-weight: 600; // font-semibold
+    font-size: 1.25rem; // text-xl
+    margin: 0;
+    color: white;
+  }
+
+  p {
+    font-size: 1rem; // text-md
+    margin: 0;
+    color: white;
+  }
+
+  .aboutText {
+    width: 25rem; // w-100 (100 * 0.25rem = 25rem)
+    margin-top: 0.75rem; // mt-3
+  }
+
+  .email {
+    margin-top: 1.25rem; // mt-5
+    display: flex;
+    align-items: center;
+    gap: 0.375rem; // gap-[6px]
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  .email:hover {
+    opacity: 0.7;
+  }
+
+  .links {
+    margin-top: 0.75rem; // mt-3
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem; // gap-[6px]
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.1s ease-in-out;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .footer {
+    gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer {
+    gap: 0;
+    justify-content: space-evenly;
+    padding: 2.5rem 0rem 3.5rem 0rem; // pt-10 px-16 pb-14
+
+    .aboutText {
+      width: 20rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: start;
+    padding: 2.5rem 3rem 3.5rem 3rem; // pt-10 px-16 pb-14
+
+    .aboutText {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .footer {
+    .aboutText {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 308px) {
+  .footer {
+    .email {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  .footer {
+    .email {
+      display: none;
+    }
+  }
+}

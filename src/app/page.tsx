@@ -1,5 +1,5 @@
 import CTA from "@/components/cta/CTA";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/navbar/Navbar";
 import OurTeam from "@/components/OurTeam";
@@ -13,7 +13,7 @@ export default function Home() {
       {/* <WhyUs /> */}
       <OurTeam />
       <CTA />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
