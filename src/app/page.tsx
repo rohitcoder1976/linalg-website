@@ -3,14 +3,14 @@ import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/navbar/Navbar";
 import OurTeam from "@/components/OurTeam";
-import WhyUs from "@/components/WhyUs";
+import About from "@/components/about/About";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
-      {/* <WhyUs /> */}
+      <About />
       <OurTeam />
       <CTA />
       <Footer />
