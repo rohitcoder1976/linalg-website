@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
+import { RefObject } from "react";
 
 const members = [
     {
@@ -20,14 +21,15 @@ const members = [
         profilePicture: "none",
         initials: "S"
     },
-    {
-        name: "Michael Tucker '26",
-        title: "Member",
-        profilePicture: "none",
-        initials: "M"
-    },
+
     {
         name: "Jonathan Nguyen '26",
+        title: "Member",
+        profilePicture: "none",
+        initials: "J"
+    },
+    {
+        name: "Hannah Li '27",
         title: "Member",
         profilePicture: "none",
         initials: "J"
@@ -38,9 +40,15 @@ const members = [
         profilePicture: "none",
         initials: "R"
     },
+    {
+        name: "Michael Tucker '26",
+        title: "Member",
+        profilePicture: "none",
+        initials: "M"
+    },
 ];
 
-const colorToIndex = ["bg-red-600/50", "bg-blue-600/50", "bg-green-600/50", "bg-purple-600/50", "bg-yellow-600/50", "bg-pink-600/50"];
+const colorToIndex = ["bg-red-600/50", "bg-blue-600/50", "bg-green-600/50", "bg-purple-600/50", "bg-yellow-600/50", "bg-pink-600/50", "bg-blue-600/50"];
 
 const variants = {
     initial: {
@@ -57,9 +65,13 @@ const variants = {
     }
 };
 
-function OurTeam() {
+interface Props {
+    membersRef: RefObject<HTMLDivElement | null>
+}
+
+function OurTeam({ membersRef }: Props) {
     return (
-        <div id="members" className="min-h-[calc(100vh_-_250px)] mt-10 py-4 px-6">
+        <div ref={membersRef} id="members" className="min-h-[calc(100vh_-_250px)] mt-10 py-4 px-6">
             <h2 className="text-center poppins font-bold text-4xl text-[#d3a971]">Our Team</h2>
             <motion.div variants={variants} initial="initial" whileInView="animate" className="mt-12 flex flex-wrap justify-center gap-20 m-auto w-[80%]">
                 {members.map((member, index) => (

@@ -2,8 +2,8 @@ import { Mail } from "lucide-react";
 import styles from "./footer.module.scss";
 
 const links = [
-    { title: "About Us", href: "#about" },
-    { title: "Members", href: "#members" },
+    // { title: "About Us", href: "#about" },
+    // { title: "Members", href: "#members" },
     {
         title: "Apply Now",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSdrT9iHyOZT5oHfemGs-B2LbQRZj2loL9bIz8Eq72fInzCIBw/viewform?usp=dialog"

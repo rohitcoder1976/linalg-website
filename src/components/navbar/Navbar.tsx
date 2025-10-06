@@ -1,7 +1,14 @@
 import Image from "next/image";
 import styles from './navbar.module.scss';
+import { RefObject } from "react";
 
-function Navbar() {
+interface Props {
+    handleAboutScroll: () => void;
+    handleMembersScroll: () => void;
+}
+
+function Navbar({ handleAboutScroll, handleMembersScroll }: Props) {
+
     return (
         <div className={styles.navbar}>
             <a href="/">
@@ -16,8 +23,8 @@ function Navbar() {
             </a>
 
             <div className={styles.links}>
-                <a href="#about" className={styles.aboutUs + " " + styles.link}>About Us</a>
-                <a href="#members" className={styles.members + " " + styles.link}>Members</a>
+                <span onClick={handleAboutScroll} className={styles.aboutUs + " " + styles.link}>About Us</span>
+                <span onClick={handleMembersScroll} className={styles.members + " " + styles.link}>Members</span>
                 <a href="#contact" className={styles.contactUs}>
                     <button>Contact Us</button>
                 </a>

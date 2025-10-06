@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { RefObject, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./about.module.scss";
 
@@ -40,10 +40,14 @@ const rightVariants = {
     }
 };
 
-function About() {
+interface Props {
+    aboutRef: RefObject<HTMLDivElement | null>;
+}
+
+function About({ aboutRef }: Props) {
     const [activeIndex, setActiveIndex] = useState(0);
     return <>
-        <div id="about" className={styles.about}>
+        <div id="about" ref={aboutRef} className={styles.about}>
             <h2 className={styles.heading}>About Us</h2>
             <div className={styles.container}>
                 <motion.div
