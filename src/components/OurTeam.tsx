@@ -35,20 +35,26 @@ const members = [
         initials: "J"
     },
     {
-        name: "Robert Evans '26",
-        title: "Member",
-        profilePicture: "none",
-        initials: "R"
-    },
-    {
         name: "Michael Tucker '26",
         title: "Member",
         profilePicture: "none",
         initials: "M"
     },
+    {
+        name: "Brooks Evans '26",
+        title: "Member",
+        profilePicture: "none",
+        initials: "B"
+    },
+    {
+        name: "Advaith Shrowthy '27",
+        title: "Member",
+        profilePicture: "none",
+        initials: "A"
+    }
 ];
 
-const colorToIndex = ["bg-red-600/50", "bg-blue-600/50", "bg-green-600/50", "bg-purple-600/50", "bg-yellow-600/50", "bg-pink-600/50", "bg-blue-600/50"];
+const colorToIndex = ["bg-red-600/50", "bg-blue-600/50", "bg-green-600/50", "bg-purple-600/50", "bg-yellow-600/50", "bg-cyan-500/50", "bg-yellow-600/50", "bg-pink-400/50"];
 
 const variants = {
     initial: {
