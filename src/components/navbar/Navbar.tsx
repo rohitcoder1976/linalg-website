@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from './navbar.module.scss';
-import { RefObject } from "react";
 
 interface Props {
     handleAboutScroll: () => void;

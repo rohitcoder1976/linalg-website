@@ -32,7 +32,7 @@ const members = [
         name: "Hannah Li '27",
         title: "Member",
         profilePicture: "none",
-        initials: "J"
+        initials: "H"
     },
     {
         name: "Michael Tucker '26",
